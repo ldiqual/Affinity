@@ -21,6 +21,7 @@
 		C0CCB19F15275D70000453C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CCB17D15275D70000453C4 /* Foundation.framework */; };
 		C0CCB1A715275D70000453C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0CCB1A515275D70000453C4 /* InfoPlist.strings */; };
 		C0CCB1AA15275D70000453C4 /* CompatibilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CCB1A915275D70000453C4 /* CompatibilityTests.m */; };
+		C0CCB1BC15276BBB000453C4 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CCB1BB15276BBB000453C4 /* CoreImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,22 +39,24 @@
 		C0CCB17B15275D70000453C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C0CCB17D15275D70000453C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C0CCB17F15275D70000453C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C0CCB18315275D70000453C4 /* Compatibility-Info.plist */ = {isa = PBXFileReference; path = "Compatibility-Info.plist"; sourceTree = "<group>"; };
+		C0CCB18315275D70000453C4 /* Compatibility-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Compatibility-Info.plist"; sourceTree = "<group>"; };
 		C0CCB18515275D70000453C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C0CCB18715275D70000453C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C0CCB18915275D70000453C4 /* Compatibility-Prefix.pch */ = {isa = PBXFileReference; path = "Compatibility-Prefix.pch"; sourceTree = "<group>"; };
-		C0CCB18A15275D70000453C4 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		C0CCB18915275D70000453C4 /* Compatibility-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Compatibility-Prefix.pch"; sourceTree = "<group>"; };
+		C0CCB18A15275D70000453C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C0CCB18B15275D70000453C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C0CCB18E15275D70000453C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		C0CCB19115275D70000453C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		C0CCB19315275D70000453C4 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		C0CCB19315275D70000453C4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C0CCB19415275D70000453C4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C0CCB19B15275D70000453C4 /* CompatibilityTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompatibilityTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CCB19C15275D70000453C4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		C0CCB1A415275D70000453C4 /* CompatibilityTests-Info.plist */ = {isa = PBXFileReference; path = "CompatibilityTests-Info.plist"; sourceTree = "<group>"; };
+		C0CCB1A415275D70000453C4 /* CompatibilityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CompatibilityTests-Info.plist"; sourceTree = "<group>"; };
 		C0CCB1A615275D70000453C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C0CCB1A815275D70000453C4 /* CompatibilityTests.h */ = {isa = PBXFileReference; path = CompatibilityTests.h; sourceTree = "<group>"; };
+		C0CCB1A815275D70000453C4 /* CompatibilityTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompatibilityTests.h; sourceTree = "<group>"; };
 		C0CCB1A915275D70000453C4 /* CompatibilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompatibilityTests.m; sourceTree = "<group>"; };
+		C0CCB1BB15276BBB000453C4 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		C0CCB1C115288BDD000453C4 /* structures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = structures.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0CCB1BC15276BBB000453C4 /* CoreImage.framework in Frameworks */,
 				C0CCB17C15275D70000453C4 /* UIKit.framework in Frameworks */,
 				C0CCB17E15275D70000453C4 /* Foundation.framework in Frameworks */,
 				C0CCB18015275D70000453C4 /* CoreGraphics.framework in Frameworks */,
@@ -83,6 +87,7 @@
 		C0CCB16C15275D70000453C4 = {
 			isa = PBXGroup;
 			children = (
+				C0CCB1BB15276BBB000453C4 /* CoreImage.framework */,
 				C0CCB18115275D70000453C4 /* Compatibility */,
 				C0CCB1A215275D70000453C4 /* CompatibilityTests */,
 				C0CCB17A15275D70000453C4 /* Frameworks */,
@@ -118,6 +123,7 @@
 				C0CCB18D15275D70000453C4 /* MainStoryboard_iPhone.storyboard */,
 				C0CCB19015275D70000453C4 /* MainStoryboard_iPad.storyboard */,
 				C0CCB19315275D70000453C4 /* ViewController.h */,
+				C0CCB1C115288BDD000453C4 /* structures.h */,
 				C0CCB19415275D70000453C4 /* ViewController.m */,
 				C0CCB18215275D70000453C4 /* Supporting Files */,
 			);

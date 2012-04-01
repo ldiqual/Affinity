@@ -8,6 +8,26 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate> {
+  UIView * shootingFace;
+  CGPoint *leftPoints;
+  CGPoint *rightPoints;
+  BOOL leftCaptured;
+  BOOL rightCaptured;
+  UIImage *leftImage;
+  UIImage *rightImage;
+}
+@property (weak, nonatomic) IBOutlet UIImageView *leftFace;
+@property (weak, nonatomic) IBOutlet UIImageView *rightFace;
+- (IBAction)cameraPress:(id)sender;
 
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info;
+- (void)faceRecognized:(UIImage *)image feature:(CIFaceFeature *)feature;
+- (void)recognitionError;
+- (void)compute;
+- (void)drawTriangle:(CGPoint[3])points faceWidth:(float)faceWidth withColor:(UIColor *)color;
+
++ (UIImage*)imageWithImage:(UIImage*)image 
+              scaledToSize:(CGSize)newSize;
 @end
