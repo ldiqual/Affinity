@@ -22,6 +22,8 @@
 		C0CCB1A715275D70000453C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0CCB1A515275D70000453C4 /* InfoPlist.strings */; };
 		C0CCB1AA15275D70000453C4 /* CompatibilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CCB1A915275D70000453C4 /* CompatibilityTests.m */; };
 		C0CCB1BC15276BBB000453C4 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CCB1BB15276BBB000453C4 /* CoreImage.framework */; };
+		C0CCB1C31528C1EA000453C4 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C0CCB1C21528C1EA000453C4 /* Icon.png */; };
+		C0CCB1C51528C3C2000453C4 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = C0CCB1C41528C3C2000453C4 /* camera.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C0CCB17715275D70000453C4 /* Compatibility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compatibility.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0CCB17715275D70000453C4 /* Affinity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Affinity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CCB17B15275D70000453C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C0CCB17D15275D70000453C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C0CCB17F15275D70000453C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,6 +59,8 @@
 		C0CCB1A915275D70000453C4 /* CompatibilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompatibilityTests.m; sourceTree = "<group>"; };
 		C0CCB1BB15276BBB000453C4 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		C0CCB1C115288BDD000453C4 /* structures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = structures.h; sourceTree = "<group>"; };
+		C0CCB1C21528C1EA000453C4 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		C0CCB1C41528C3C2000453C4 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera.png; path = ../../../../Desktop/camera.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,7 @@
 		C0CCB17815275D70000453C4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C0CCB17715275D70000453C4 /* Compatibility.app */,
+				C0CCB17715275D70000453C4 /* Affinity.app */,
 				C0CCB19B15275D70000453C4 /* CompatibilityTests.octest */,
 			);
 			name = Products;
@@ -118,6 +122,8 @@
 		C0CCB18115275D70000453C4 /* Compatibility */ = {
 			isa = PBXGroup;
 			children = (
+				C0CCB1C41528C3C2000453C4 /* camera.png */,
+				C0CCB1C21528C1EA000453C4 /* Icon.png */,
 				C0CCB18A15275D70000453C4 /* AppDelegate.h */,
 				C0CCB18B15275D70000453C4 /* AppDelegate.m */,
 				C0CCB18D15275D70000453C4 /* MainStoryboard_iPhone.storyboard */,
@@ -177,7 +183,7 @@
 			);
 			name = Compatibility;
 			productName = Compatibility;
-			productReference = C0CCB17715275D70000453C4 /* Compatibility.app */;
+			productReference = C0CCB17715275D70000453C4 /* Affinity.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C0CCB19A15275D70000453C4 /* CompatibilityTests */ = {
@@ -233,6 +239,8 @@
 				C0CCB18615275D70000453C4 /* InfoPlist.strings in Resources */,
 				C0CCB18F15275D70000453C4 /* MainStoryboard_iPhone.storyboard in Resources */,
 				C0CCB19215275D70000453C4 /* MainStoryboard_iPad.storyboard in Resources */,
+				C0CCB1C31528C1EA000453C4 /* Icon.png in Resources */,
+				C0CCB1C51528C3C2000453C4 /* camera.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +388,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Compatibility/Compatibility-Prefix.pch";
 				INFOPLIST_FILE = "Compatibility/Compatibility-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Affinity;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,7 +399,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Compatibility/Compatibility-Prefix.pch";
 				INFOPLIST_FILE = "Compatibility/Compatibility-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Affinity;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -449,6 +457,7 @@
 				C0CCB1AF15275D70000453C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0CCB1B015275D70000453C4 /* Build configuration list for PBXNativeTarget "CompatibilityTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +466,7 @@
 				C0CCB1B215275D70000453C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,12 +9,12 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Compatibility/ViewController.m"
-         timestampString = "354986739.74294"
+         timestampString = "354993407.569296"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "131"
-         endingLineNumber = "131"
-         landmarkName = "-faceRecognized:feature:"
+         startingLineNumber = "124"
+         endingLineNumber = "124"
+         landmarkName = "-centerImage:withDetectedPoints:andView:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -23,11 +23,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Compatibility/ViewController.m"
-         timestampString = "354985017.555797"
+         timestampString = "354993407.569296"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "45"
-         endingLineNumber = "45"
+         startingLineNumber = "46"
+         endingLineNumber = "46"
          landmarkName = "-touchesBegan:withEvent:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -37,11 +37,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Compatibility/ViewController.m"
-         timestampString = "354986739.74294"
+         timestampString = "354993407.569296"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "152"
-         endingLineNumber = "152"
+         startingLineNumber = "145"
+         endingLineNumber = "145"
          landmarkName = "-faceRecognized:feature:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -51,13 +51,13 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Compatibility/ViewController.m"
-         timestampString = "354986739.74294"
+         timestampString = "354993407.569296"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "177"
-         endingLineNumber = "177"
-         landmarkName = "@implementation ViewController"
-         landmarkType = "3">
+         startingLineNumber = "172"
+         endingLineNumber = "172"
+         landmarkName = "-faceRecognized:feature:"
+         landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -65,12 +65,40 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Compatibility/ViewController.m"
-         timestampString = "354986739.74294"
+         timestampString = "354993407.569296"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "164"
-         endingLineNumber = "164"
+         startingLineNumber = "158"
+         endingLineNumber = "158"
          landmarkName = "-faceRecognized:feature:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "Compatibility/ViewController.m"
+         timestampString = "354993542.930907"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "210"
+         endingLineNumber = "210"
+         landmarkName = "-compute"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "Compatibility/ViewController.m"
+         timestampString = "354994547.174288"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "179"
+         endingLineNumber = "179"
+         landmarkName = "-compute"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

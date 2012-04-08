@@ -23,17 +23,39 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81087139798757679" green="0.8968138736432657" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="13" id="kpc-18-4sV">
+                                <rect key="frame" x="100" y="190" width="120" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="camera.png" id="RCZ-aj-ima">
+                                <rect key="frame" x="21" y="190" width="119" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="camera.png" id="e2V-EK-2Ft">
+                                <rect key="frame" x="181" y="190" width="119" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="affinityLabel" destination="kpc-18-4sV" id="YpW-VK-08V"/>
+                        <outlet property="leftCameraView" destination="RCZ-aj-ima" id="R8F-ED-Ilb"/>
                         <outlet property="leftFace" destination="6O3-Qk-1TR" id="Yh4-eY-luQ"/>
+                        <outlet property="rightCameraView" destination="e2V-EK-2Ft" id="Zgj-R1-ZT3"/>
                         <outlet property="rightFace" destination="Tfk-6S-Wvd" id="MmC-G6-0Db"/>
                     </connections>
                 </viewController>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera.png" width="64" height="64"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

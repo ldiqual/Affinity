@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C0CCB17615275D70000453C4"
-               BuildableName = "Compatibility.app"
+               BuildableName = "Affinity.app"
                BlueprintName = "Compatibility"
                ReferencedContainer = "container:Compatibility.xcodeproj">
             </BuildableReference>
@@ -42,7 +42,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C0CCB17615275D70000453C4"
-            BuildableName = "Compatibility.app"
+            BuildableName = "Affinity.app"
             BlueprintName = "Compatibility"
             ReferencedContainer = "container:Compatibility.xcodeproj">
          </BuildableReference>
@@ -60,7 +60,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C0CCB17615275D70000453C4"
-            BuildableName = "Compatibility.app"
+            BuildableName = "Affinity.app"
             BlueprintName = "Compatibility"
             ReferencedContainer = "container:Compatibility.xcodeproj">
          </BuildableReference>
@@ -78,7 +78,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C0CCB17615275D70000453C4"
-            BuildableName = "Compatibility.app"
+            BuildableName = "Affinity.app"
             BlueprintName = "Compatibility"
             ReferencedContainer = "container:Compatibility.xcodeproj">
          </BuildableReference>

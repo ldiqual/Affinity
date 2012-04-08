@@ -16,17 +16,21 @@
   BOOL rightCaptured;
   UIImage *leftImage;
   UIImage *rightImage;
+  NSMutableArray *leftSubViews;
+  NSMutableArray *rightSubViews;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *leftFace;
 @property (weak, nonatomic) IBOutlet UIImageView *rightFace;
-- (IBAction)cameraPress:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *affinityLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *leftCameraView;
+@property (weak, nonatomic) IBOutlet UIImageView *rightCameraView;
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
--(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info;
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info;
 - (void)faceRecognized:(UIImage *)image feature:(CIFaceFeature *)feature;
 - (void)recognitionError;
 - (void)compute;
-- (void)drawTriangle:(CGPoint[3])points faceWidth:(float)faceWidth withColor:(UIColor *)color;
+- (void)drawPoints:(CGPoint[3])points faceWidth:(float)faceWidth withColor:(UIColor *)color side:(int)side;
 
 + (UIImage*)imageWithImage:(UIImage*)image 
               scaledToSize:(CGSize)newSize;
