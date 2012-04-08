@@ -24,6 +24,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *affinityLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *leftCameraView;
 @property (weak, nonatomic) IBOutlet UIImageView *rightCameraView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *leftSpinner;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *rightSpinner;
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info;

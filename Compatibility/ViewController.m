@@ -16,6 +16,8 @@
 @synthesize affinityLabel;
 @synthesize leftCameraView;
 @synthesize rightCameraView;
+@synthesize leftSpinner;
+@synthesize rightSpinner;
 
 - (void)didReceiveMemoryWarning
 {
@@ -36,6 +38,10 @@
   affinityLabel.hidden = TRUE;
   leftSubViews = [NSMutableArray array];
   rightSubViews = [NSMutableArray array];
+  [leftSpinner startAnimating];
+  [rightSpinner startAnimating];
+  leftSpinner.hidden = TRUE;
+  rightSpinner.hidden = TRUE;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -44,8 +50,17 @@
   
   //NSLog(@"%p left:%p right:%p", [touch view], leftFace, rightFace);
   
-  if ([touch view] == leftFace || [touch view] == rightFace) {
+  if ([touch view] == leftFace || [touch view] == rightFace) {    
     shootingFace = [touch view];
+    
+    if (shootingFace == leftFace) {
+      [self.view bringSubviewToFront:leftSpinner];
+      leftSpinner.hidden = FALSE;
+    } else {
+      [self.view bringSubviewToFront:rightSpinner];
+      rightSpinner.hidden = FALSE;
+    }
+    
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
     imagePicker.sourceType =  UIImagePickerControllerSourceTypeCamera;
     imagePicker.delegate = self;
@@ -60,7 +75,11 @@
   NSLog(@"Image chosen");
   // Access the uncropped image from info dictionary
   UIImage *image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
-  
+  [picker dismissViewControllerAnimated:TRUE completion:nil];
+  [self performSelectorInBackground:@selector(markFaces:) withObject:image];
+}
+
+- (void)markFaces:(UIImage *)image {
   CIDetector* detector = [CIDetector detectorOfType:CIDetectorTypeFace
                                             context:nil
                                             options:[NSDictionary dictionaryWithObject:CIDetectorAccuracyHigh
@@ -72,7 +91,6 @@
   NSDictionary* imageOptions = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:6]
                                                            forKey:CIDetectorImageOrientation];
   NSArray* features = [detector featuresInImage:ciImage options:imageOptions];
-  [picker dismissViewControllerAnimated:TRUE completion:nil];
   
   if ([features count] == 0) {
     NSLog(@"Nothing detected, aborting...");
@@ -84,6 +102,17 @@
 }
 
 - (void)recognitionError {
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" 
+                                                  message:@"Can't find a face on this picture"
+                                                 delegate:nil 
+                                        cancelButtonTitle:@"OK" 
+                                        otherButtonTitles: nil];
+  if (shootingFace == leftFace) {
+    leftSpinner.hidden = TRUE;
+  } else {
+    rightSpinner.hidden = TRUE;
+  }
+  [alert show];
   NSLog(@"Recognition Error");
 }
 
@@ -206,6 +235,12 @@
   NSLog(@"Affinity: %f", percent);
   affinityLabel.hidden = FALSE;
   affinityLabel.text = [NSString stringWithFormat:@"%d%%", (int)percent];
+  
+  if (shootingFace == leftFace) {
+    leftSpinner.hidden = TRUE;
+  } else {
+    rightSpinner.hidden = TRUE;
+  }
 }
 
 - (void)drawPoints:(CGPoint[3])points faceWidth:(float)faceWidth withColor:(UIColor *)color side:(int)side {
@@ -244,6 +279,8 @@
   [self setAffinityLabel:nil];
   [self setLeftCameraView:nil];
   [self setRightCameraView:nil];
+  [self setLeftSpinner:nil];
+  [self setRightSpinner:nil];
   [super viewDidUnload];
 }
 
