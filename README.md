@@ -5,9 +5,15 @@ Affinity is a simple iPhone application made for learning purposes. This is my f
 It consists the comparison between two faces and will output an affinity rate based on the eyes and mouth positions.
 
 Screenshots
--------
+-----------
 
 ![](http://lois.di-qual.net/files/affinity/1_.png)  ![](http://lois.di-qual.net/files/affinity/2_.png)  ![](http://lois.di-qual.net/files/affinity/3_.png)  ![](http://lois.di-qual.net/files/affinity/4_.png)
+
+Installation
+------------
+
+ * Download `Affinity.ipa` from Github
+ * Open it with iTunes and synchronize your device
 
 How to build
 ------------
